@@ -39,7 +39,7 @@ const fadeIn = {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white overflow-x-hidden">
       <WhatsAppButton />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -576,13 +576,13 @@ export default function Home() {
 
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <motion.div
-                className="relative mx-auto lg:mx-0"
+                className="relative mx-auto lg:mx-0 max-w-full"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
               >
-                <div className="relative w-80 h-80 lg:w-96 lg:h-96">
+                <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 mx-auto">
                   {/* Background decorative elements */}
                   <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-black rounded-full opacity-50 blur-2xl" />
 

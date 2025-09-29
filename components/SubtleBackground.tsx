@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 export default function SubtleBackground() {
   return (
-    <div className="absolute inset-0 overflow-hidden">
+    <div className="absolute inset-0 overflow-hidden pointer-events-none">
       {/* Gradient mesh background */}
       <div className="absolute inset-0 opacity-[0.08]">
         <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-white to-transparent" />
@@ -12,36 +12,38 @@ export default function SubtleBackground() {
       </div>
 
       {/* Animated gradient orbs */}
-      <motion.div
-        className="absolute top-20 -right-20 w-[600px] h-[600px]"
-        animate={{
-          x: [0, 100, 0],
-          y: [0, -100, 0],
-        }}
-        transition={{
-          duration: 20,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      >
-        <div className="w-full h-full bg-gradient-radial from-white/20 via-white/10 to-transparent rounded-full blur-3xl" />
-      </motion.div>
+      <div className="absolute inset-0 overflow-hidden">
+        <motion.div
+          className="absolute top-20 right-0 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[600px] md:h-[600px]"
+          animate={{
+            x: [0, 50, 0],
+            y: [0, -50, 0],
+          }}
+          transition={{
+            duration: 20,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+        >
+          <div className="w-full h-full bg-gradient-radial from-white/20 via-white/10 to-transparent rounded-full blur-3xl" />
+        </motion.div>
 
-      <motion.div
-        className="absolute -bottom-20 -left-20 w-[500px] h-[500px]"
-        animate={{
-          x: [0, -80, 0],
-          y: [0, 80, 0],
-        }}
-        transition={{
-          duration: 25,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 2
-        }}
-      >
-        <div className="w-full h-full bg-gradient-radial from-white/20 via-white/10 to-transparent rounded-full blur-3xl" />
-      </motion.div>
+        <motion.div
+          className="absolute bottom-0 left-0 w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] md:w-[500px] md:h-[500px]"
+          animate={{
+            x: [0, -40, 0],
+            y: [0, 40, 0],
+          }}
+          transition={{
+            duration: 25,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 2
+          }}
+        >
+          <div className="w-full h-full bg-gradient-radial from-white/20 via-white/10 to-transparent rounded-full blur-3xl" />
+        </motion.div>
+      </div>
 
       {/* Grid pattern */}
       <svg className="absolute inset-0 w-full h-full opacity-[0.1]">
