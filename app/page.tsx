@@ -684,13 +684,16 @@ export default function Home() {
             <p className="text-xl font-light opacity-80 mb-12">
               Reduza custos, aumente eficiência e escale seu negócio
             </p>
-            <motion.button
-              className="px-12 py-5 bg-white text-black hover:bg-gray-200 transition-all duration-300 text-lg uppercase tracking-wider"
+            <motion.a
+              href="https://wa.me/5562993139371?text=Olá! Vi seu site e gostaria de agendar um diagnóstico gratuito para minha empresa."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-12 py-5 bg-white text-black hover:bg-gray-200 transition-all duration-300 text-lg uppercase tracking-wider"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Agendar Consultoria Gratuita
-            </motion.button>
+              Agendar Diagnóstico
+            </motion.a>
           </motion.div>
         </div>
       </section>
