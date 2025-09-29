@@ -758,10 +758,10 @@ export default function Home() {
                 <h4 className="text-lg font-light mb-4 uppercase tracking-wider">Contato</h4>
                 <div className="space-y-2">
                   <a
-                    href="mailto:juliosousajr@gmail.com"
+                    href="mailto:contato@juliosousa.tec.br"
                     className="block font-light opacity-70 hover:opacity-100 transition-opacity"
                   >
-                    juliosousajr@gmail.com
+                    contato@juliosousa.tec.br
                   </a>
                   <a
                     href="https://www.linkedin.com/in/juliosousajr/"

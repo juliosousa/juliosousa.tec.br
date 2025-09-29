@@ -164,7 +164,7 @@ npm run start
 ## 🤝 Contato
 
 **Julio Sousa**
-- 📧 Email: juliosousajr@gmail.com
+- 📧 Email: contato@juliosousa.tec.br
 - 💼 LinkedIn: [/in/juliosousajr](https://www.linkedin.com/in/juliosousajr/)
 - 📱 WhatsApp: +55 62 99313-9371
 

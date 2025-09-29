@@ -66,7 +66,7 @@ juliosousa.tec/
 
 ## Informações de Contato
 
-- **Email**: juliosousajr@gmail.com
+- **Email**: contato@juliosousa.tec.br
 - **WhatsApp**: +55 62 99313-9371
 - **LinkedIn**: https://www.linkedin.com/in/juliosousajr/
 
