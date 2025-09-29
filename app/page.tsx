@@ -28,8 +28,7 @@ import {
   Bot,
   Layers
 } from "lucide-react"
-import NeuralNetwork from "@/components/NeuralNetwork"
-import FloatingOrbs from "@/components/FloatingOrbs"
+import SubtleBackground from "@/components/SubtleBackground"
 import WhatsAppButton from "@/components/WhatsAppButton"
 
 const fadeIn = {
@@ -45,8 +44,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-black" />
-        <FloatingOrbs />
-        <NeuralNetwork />
+        <SubtleBackground />
 
         <div className="relative container mx-auto px-4 py-24 z-10">
           <motion.div
@@ -71,29 +69,10 @@ export default function Home() {
               otimizando processos com <span className="font-normal">Inteligência Artificial</span>
             </h1>
 
-            <p className="text-lg sm:text-xl font-light opacity-80 mb-12 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl font-light opacity-80 mb-16 max-w-3xl mx-auto">
               A expertise de um Chief Technology Officer de maneira flexível e sob demanda.
               Transformo tecnologia, produto e marketing em vantagem competitiva para sua empresa.
             </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-              <motion.button
-                className="px-8 py-4 border border-white text-white hover:bg-white hover:text-black transition-all duration-300 flex items-center justify-center gap-2 group text-sm uppercase tracking-wider"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Agendar Conversa
-                <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </motion.button>
-
-              <motion.button
-                className="px-8 py-4 bg-white text-black hover:bg-gray-200 transition-all duration-300 text-sm uppercase tracking-wider"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Ver Escopo de Atuação
-              </motion.button>
-            </div>
 
             {/* Quick Stats */}
             <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
@@ -103,7 +82,7 @@ export default function Home() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1 }}
               >
-                <div className="text-3xl font-light mb-1">15+</div>
+                <div className="text-3xl font-light mb-1">18+</div>
                 <div className="text-xs opacity-60 uppercase tracking-wider">Anos Experiência</div>
               </motion.div>
               <motion.div
@@ -669,7 +648,7 @@ export default function Home() {
                 <div className="space-y-4 mb-8">
                   <div className="flex items-center gap-3">
                     <CheckCircle2 className="h-5 w-5 flex-shrink-0" />
-                    <span className="font-light">15+ anos construindo produtos digitais</span>
+                    <span className="font-light">18+ anos construindo produtos digitais</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle2 className="h-5 w-5 flex-shrink-0" />
@@ -682,17 +661,6 @@ export default function Home() {
                   <div className="flex items-center gap-3">
                     <CheckCircle2 className="h-5 w-5 flex-shrink-0" />
                     <span className="font-light">Certificações em IA e Product Management</span>
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-2 gap-6 mb-8">
-                  <div>
-                    <div className="text-3xl font-light mb-1">80+</div>
-                    <div className="text-xs opacity-60 uppercase tracking-wider">Colaboradores Liderados</div>
-                  </div>
-                  <div>
-                    <div className="text-3xl font-light mb-1">10+</div>
-                    <div className="text-xs opacity-60 uppercase tracking-wider">Produtos Lançados</div>
                   </div>
                 </div>
 

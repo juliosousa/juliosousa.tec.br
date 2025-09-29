@@ -7,7 +7,7 @@ export default function FloatingOrbs() {
     <div className="absolute inset-0 overflow-hidden">
       {/* Main large orb */}
       <motion.div
-        className="absolute top-1/4 left-1/4 w-96 h-96 opacity-20"
+        className="absolute top-1/4 left-1/4 w-96 h-96 opacity-10"
         initial={{ scale: 0 }}
         animate={{
           scale: [1, 1.2, 1],
@@ -20,12 +20,12 @@ export default function FloatingOrbs() {
           ease: "easeInOut"
         }}
       >
-        <div className="w-full h-full rounded-full bg-gradient-radial from-white/20 to-transparent blur-3xl" />
+        <div className="w-full h-full rounded-full bg-gradient-radial from-white/10 to-transparent blur-3xl" />
       </motion.div>
 
       {/* Secondary orb */}
       <motion.div
-        className="absolute bottom-1/4 right-1/4 w-72 h-72 opacity-15"
+        className="absolute bottom-1/4 right-1/4 w-72 h-72 opacity-10"
         initial={{ scale: 0 }}
         animate={{
           scale: [1, 1.3, 1],
@@ -39,7 +39,7 @@ export default function FloatingOrbs() {
           delay: 2
         }}
       >
-        <div className="w-full h-full rounded-full bg-gradient-radial from-white/15 to-transparent blur-3xl" />
+        <div className="w-full h-full rounded-full bg-gradient-radial from-white/10 to-transparent blur-3xl" />
       </motion.div>
 
       {/* Small floating particles */}
@@ -50,12 +50,12 @@ export default function FloatingOrbs() {
           style={{
             left: `${Math.random() * 100}%`,
             top: `${Math.random() * 100}%`,
-            opacity: Math.random() * 0.5 + 0.2
+            opacity: Math.random() * 0.2 + 0.1
           }}
           animate={{
             y: [0, -30, 0],
             x: [0, Math.random() * 20 - 10, 0],
-            opacity: [0.2, 0.5, 0.2]
+            opacity: [0.1, 0.2, 0.1]
           }}
           transition={{
             duration: Math.random() * 10 + 10,
