@@ -81,7 +81,7 @@ export default function SubtleBackground() {
       <motion.div
         className="absolute left-0 w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"
         animate={{
-          y: [0, window.innerHeight || 1000, 0],
+          y: [0, typeof window !== 'undefined' ? window.innerHeight : 1000, 0],
         }}
         transition={{
           duration: 15,
