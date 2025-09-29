@@ -74,42 +74,25 @@ export default function Home() {
               Transformo tecnologia, produto e marketing em vantagem competitiva para sua empresa.
             </p>
 
-            {/* Quick Stats */}
-            <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
-              <motion.div
-                className="text-center"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1 }}
-              >
-                <div className="text-3xl font-light mb-1">18+</div>
-                <div className="text-xs opacity-60 uppercase tracking-wider">Anos Experiência</div>
-              </motion.div>
-              <motion.div
-                className="text-center"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1.2 }}
-              >
-                <div className="text-3xl font-light mb-1">500K+</div>
-                <div className="text-xs opacity-60 uppercase tracking-wider">Usuários Impactados</div>
-              </motion.div>
-              <motion.div
-                className="text-center"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1.4 }}
-              >
-                <div className="text-3xl font-light mb-1">87%</div>
-                <div className="text-xs opacity-60 uppercase tracking-wider">Redução de Custos</div>
-              </motion.div>
-            </div>
+            {/* Subtle Learn More Button */}
+            <motion.button
+              onClick={() => {
+                document.querySelector('#conceito')?.scrollIntoView({ behavior: 'smooth' })
+              }}
+              className="text-sm font-light opacity-50 hover:opacity-100 transition-opacity duration-300 tracking-wider uppercase"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 0.5 }}
+              transition={{ delay: 1.2 }}
+              whileHover={{ opacity: 1 }}
+            >
+              Saiba mais
+            </motion.button>
           </motion.div>
         </div>
       </section>
 
       {/* When You Need Section */}
-      <section className="py-32 border-t border-gray-800">
+      <section id="conceito" className="py-32 border-t border-gray-800">
         <div className="container mx-auto px-4">
           <motion.div
             className="max-w-5xl mx-auto"
@@ -739,12 +722,6 @@ export default function Home() {
                   >
                     LinkedIn
                   </a>
-                  <a
-                    href="tel:+5562993139371"
-                    className="block font-light opacity-70 hover:opacity-100 transition-opacity"
-                  >
-                    +55 62 99313-9371
-                  </a>
                 </div>
               </div>
             </div>
@@ -753,7 +730,7 @@ export default function Home() {
 
             <div className="text-center">
               <p className="font-light opacity-50 text-sm">
-                © 2024 Julio Sousa. Todos os direitos reservados.
+                © {new Date().getFullYear()} Julio Sousa. Todos os direitos reservados.
               </p>
             </div>
           </div>
